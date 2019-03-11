@@ -9,3 +9,6 @@ legend{
 span{
     color: red;
 }
+fieldset{
+    width: 300px;
+}
