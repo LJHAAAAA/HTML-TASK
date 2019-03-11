@@ -1,0 +1,14 @@
+p{
+    font-size: 30px;
+    font-family: "微软雅黑";
+    font-weight: bolder;
+}
+legend{
+    color:red;
+}
+span{
+    color: red;
+}
+fieldset{
+    width: 400px;
+}
