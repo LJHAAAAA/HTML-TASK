@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Second HTML Work</title>
+    <style>
+        div{
+            width: 350px;
+            height: 500px;
+            border: 2px solid black;
+        }
+        ul{
+            list-style: none;
+            margin-left: -23px;
+        }
+        li{
+            background-color: gray;
+            display: inline-block;
+            font-size: 18px;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+        }
+        input{
+            height: 40px;
+            width: 200px;
+            margin-top: 40px;
+            margin-left: 14px;
+        }
+        #search{
+            height: 40px;
+            width: 60px;
+        }
+        p{
+            margin-left: 14px;
+        }
+        #clear{
+            background-color: gray;
+            color: white;
+            margin-left: 280px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="search" placeholder="请输入想查找的商品" id="content">
+        <button id="search">搜索</button>
+        <p>最近搜索</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <button id="clear">X</button>
+    </div>
+</body>
+<script>
+    var content=document.getElementById('content');
+    var search=document.getElementById('search');
+    var historysearch=document.getElementById('historysearch');
+    var li=document.getElementsByTagName('li');
+    var clear=document.getElementById('clear');
+    
+    //页面加载完成时自动读取搜索数据
+    var array=[];
+    window.onload=function(){
+        for(var i=0;i<localStorage.length;i++){
+            var temp=localStorage.key(i);
+            array[i]=localStorage.getItem(temp);
+        } 
+        if(array.length<=4){
+            for(var i=0;i<array.length;i++){
+                li[i].innerHTML=array[localStorage.length-1-i];
+            }
+        }
+        else{
+            for(var i=0;i<4;i++){
+                li[i].innerHTML=array[localStorage.length-1-i];
+            }
+        }
+    }
+    
+    
+    //存储最近的搜索数据到web storage中
+    search.onclick=function(){
+        var text=content.value;
+        localStorage.setItem("key"+localStorage.length,text);
+        for(var i=0;i<localStorage.length;i++){
+            var temp=localStorage.key(i);
+            array[i]=localStorage.getItem(temp);
+        }
+        console.log(array);
+        if(array.length<=4){
+            for(var i=0;i<array.length;i++){
+                li[i].innerHTML=array[localStorage.length-1-i];
+            }
+        }
+        else{
+            for(var i=0;i<4;i++){
+                li[i].innerHTML=array[localStorage.length-1-i];
+            }
+        }
+        content.value=null;
+    }
+
+    //清楚所有最近搜索数据
+    clear.onclick=function(){
+        localStorage.clear();
+        for(var i=0;i<li.length;i++){
+            li[i].innerHTML=null;
+        }
+        content.value=null;
+        array.splice(0,array.length);
+    }
+    console.log(array);
+    
+    
+
+</script>
+</html>
