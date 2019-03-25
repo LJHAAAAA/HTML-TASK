@@ -49,12 +49,7 @@
         <input type="search" placeholder="请输入想查找的商品" id="content">
         <button id="search">搜索</button>
         <p>最近搜索</p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <ul></ul>
         <button id="clear">X</button>
     </div>
 </body>
@@ -62,49 +57,45 @@
     var content=document.getElementById('content');
     var search=document.getElementById('search');
     var historysearch=document.getElementById('historysearch');
+    var ul=document.getElementsByTagName('ul')[0];
     var li=document.getElementsByTagName('li');
     var clear=document.getElementById('clear');
     
-    //页面加载完成时自动读取搜索数据
-    var array=[];
-    window.onload=function(){
-        for(var i=0;i<localStorage.length;i++){
-            var temp=localStorage.key(i);
-            array[i]=localStorage.getItem(temp);
-        } 
-        if(array.length<=4){
-            for(var i=0;i<array.length;i++){
-                li[i].innerHTML=array[localStorage.length-1-i];
-            }
-        }
-        else{
-            for(var i=0;i<4;i++){
-                li[i].innerHTML=array[localStorage.length-1-i];
-            }
-        }
-    }
-    
-    
     //存储最近的搜索数据到web storage中
+    var array=[];
     search.onclick=function(){
         var text=content.value;
+        //当搜索数据重复时
+        for(var i=0;i<localStorage.length;i++){ 
+            var temp=localStorage.key(i);
+            if(content.value==localStorage.getItem(temp)){
+                localStorage.removeItem(localStorage.key(i));
+                localStorage.setItem("key"+localStorage.length+i,text);
+                for(var i=0;i<localStorage.length;i++){
+                    var temptwo=localStorage.key(i);
+                    array[i]=localStorage.getItem(temptwo);
+                }
+                for(var i=0;i<array.length;i++){
+                    ul.innerHTML+="<li></li>"+"&nbsp"+"&nbsp";
+                    li[i].innerHTML=array[localStorage.length-1-i];
+                }
+                content.value=null;
+                return 0;
+            }
+        }
+        //当搜索数据不重复时
         localStorage.setItem("key"+localStorage.length,text);
         for(var i=0;i<localStorage.length;i++){
             var temp=localStorage.key(i);
             array[i]=localStorage.getItem(temp);
         }
-        console.log(array);
-        if(array.length<=4){
-            for(var i=0;i<array.length;i++){
-                li[i].innerHTML=array[localStorage.length-1-i];
-            }
-        }
-        else{
-            for(var i=0;i<4;i++){
-                li[i].innerHTML=array[localStorage.length-1-i];
-            }
+        for(var i=0;i<array.length;i++){
+            ul.innerHTML+="<li></li>"+"&nbsp"+"&nbsp";
+            li[i].innerHTML=array[localStorage.length-1-i];
         }
         content.value=null;
+        console.log(array);
+        console.log(ul);
     }
 
     //清楚所有最近搜索数据
@@ -116,9 +107,5 @@
         content.value=null;
         array.splice(0,array.length);
     }
-    console.log(array);
-    
-    
-
 </script>
 </html>
