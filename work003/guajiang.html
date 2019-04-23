@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刮奖</title>
+    <style>
+        #content{
+            width: 400px;
+            height: 200px;
+            position: relative;
+        }
+        #p{
+            font-size: 60px;
+            text-align: center;
+            margin-top:60px;
+        }
+        canvas{
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            position: absolute;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <p id="p">谢谢惠顾</p>
+    </div>
+    <canvas id="canvas" width="400" height="200">
+        您的canvas无法使用！
+    </canvas>
+</body>
+<script>
+    var canvas=document.getElementById('canvas');
+    var context=canvas.getContext('2d');
+
+    //覆盖刮奖图层
+    context.fillStyle="gray";
+    context.fillRect(0,0,400,200);
+    
+    //产生不同的奖项
+    function resourse(){
+        var p=document.getElementById('p');
+        var temp=Math.floor(1000*Math.random()/1.0);
+        if(temp>0&&temp<=10){      //中奖概率为0.01
+            p.innerHTML="一等奖";
+        }
+        else if(temp>10&&temp<=100){  //中将概率为0.09
+            p.innerHTML="二等奖";
+        }
+        else if(temp>100&&temp<=500){  //中将概率为0.4
+            p.innerHTML="三等奖";
+        }
+        else{   //不中奖概率为0.5
+            p.innerHTML="谢谢惠顾";
+        }
+    }
+    resourse();
+
+    //给canvas添加特定事件
+    canvas.addEventListener('mousemove',onMouseMove,false); //添加鼠标移动事件
+    canvas.addEventListener('mousedown',onMouseDown,false); //添加鼠标按下事件
+    canvas.addEventListener('mouseup',onMouseUp,false); //添加鼠标抬起事件
+
+    //编辑特定事件
+    var logo=0;     //设置logo来代表鼠标的状态
+    var count=0;  //定义count代表透明点的个数
+    function onMouseDown(event){    //鼠标按下
+        logo=1;
+    }
+    function onMouseUp(event){  //鼠标抬起
+        logo=0;
+        //判断刮开的区域是否大于85%
+        var imgdata=context.getImageData(0,0,400,200);//获取当前的canvas数据
+        var pxdata=imgdata.data; //获取字节数据
+        var len=pxdata.length; //获取字节数据的长度
+        for(var i=0;i<pxdata.length;i+=4){
+            var per=pxdata[i+3]; //获取每个像素的透明度
+            if(per<10){   //透明度小于10时默认暂定为透明
+                count++;
+            }
+        }
+        var percent=count/(len/4);
+        if(percent>=0.85){
+            context.clearRect(0,0,400,200);
+            alert(p.innerHTML);
+        }
+    }
+    function onMouseMove(event){  //鼠标移动
+        if(logo==1){
+            var x=event.layerX;
+            var y=event.layerY;
+            context.beginPath();
+            context.globalCompositeOperation="destination-out";
+            context.arc(x,y,30,0,Math.PI*2);
+            context.closePath();
+            context.fill();
+        }
+    }
+</script>
+</html>
