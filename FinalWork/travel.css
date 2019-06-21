@@ -1,0 +1,1661 @@
+body{
+    background-color: rgb(221, 221, 221);
+}
+
+
+
+/*PC端顶部独有的登录注册*/
+.toppest{
+    display: block;
+    background-color: rgb(40, 40, 40);
+    height: 47px;
+    position: relative;
+}
+.toppest img{
+    position: absolute;
+    left: 70%;
+    top: 25%;
+}
+.phone{
+    position: absolute;
+    left: 73%;
+    top: 24%;
+}
+.phone span{
+    color: white;
+    font-size: 20px;
+}
+.login{
+    position: absolute;
+    left: 85%;
+    top: 35%;
+}
+.login span{
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+/*导航栏*/
+.nav-1{
+    width: 80%;
+    height: 80px;
+}
+.nav-1 nav{
+    width: 100%;
+    height: 100%;
+}
+.navbar-brand{
+    height: 80px;
+    width: 192px;
+}
+.navbar-toggle{
+    padding-top: 20px;
+    margin-right: -60px;
+}
+.navbar-toggle .icon-bar {
+    width: 40px;
+    background:black;
+    padding-top: 5px;
+    height: 3px;
+}
+.navbar-nav{
+    margin-top: 5px;
+    width: 70%;
+    height: 70px;
+}
+.nav>li{
+    width: 25%;
+    height: 60px;
+    text-align: center;
+}
+.nav>li>a{
+    top: 10px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.nav>li>a:hover{
+    background: none;
+    color: orangered;
+}
+.nav>li>a:visited{
+    background:rgb(221, 221, 221);
+    
+}
+.nav>li:hover{
+    border-bottom: 2px solid orangered;
+}
+#bs-1{
+    z-index: 100;
+}
+
+
+
+/*轮播*/
+.C{
+    height: 450px;
+    position: relative;
+}
+.carousel-inner{
+    height: 450px;
+}
+#generic img{
+    width: 1420px;
+    height: 450px;
+    width: 100%;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.carousel-caption{
+    top: 0%;
+    left: -20%;
+}
+.H-1{
+    position: absolute;
+    left: 35.5%;
+}
+.P-1{
+    position: absolute;
+    left: 35.5%;
+    top: 30%;
+    font-size: 20px;
+}
+.P-2{
+    position: absolute;
+    left: 35.5%;
+    top: 38%;
+    font-size: 20px;
+}
+.S-1{
+    position: absolute;
+    top:70%;
+    left: 35%;
+    width: 35%;
+    height: 10%;
+    background: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    float: left;
+}
+.S-1 button{
+    border: none;
+}
+.S-2{
+    float: left;
+    background: rgb(211, 211, 216);
+    width: 25%;
+    height: 100%;
+    border-radius:5px 0px 0px 5px;
+}
+.S-2 img{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+.S-2 p{
+    position: absolute;
+    left: 13%;
+    top: 24%;
+    font-size: 16px;
+}
+.S-3{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: black;
+}
+.S-3 input{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.S-4{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: rgb(203,84,5);
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;
+}
+.S-4 img{
+    position: absolute;
+    top:15%;
+    left: 85%;
+}
+
+
+
+/*车辆接送部分*/
+.block{
+    height: 30px;
+    border-top: 3px solid gray;
+}
+.block-1{
+    height: 365px;
+    width: 80%;
+    background: black;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.block-2{
+    float: left;
+    width: 80%;
+    height: 100%;
+    background: red;
+}
+.block-2 img{
+    height: 100%;
+    width: 100%;
+}
+.block-3{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: rgb(20,49,109);
+}
+.block-3 img{
+    margin-left: 35%;
+    margin-top: 15%;
+}
+.block-3 p{
+    color: white;
+    font-size: 25px;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.block-4{
+    width: 60%;
+    height: 15%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 25%;
+    text-align: center;
+}
+.block-4 p{
+    color: white;
+    font-size:px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-weight: lighter;
+}
+
+.ph-1{
+    margin-top: 85px;
+    width: 100%;
+    height: 23px;
+    background: rgb(245,245,245);
+    display: none;
+}
+.ph-2{
+    width: 100%;
+    height: 197px;
+    display: none;
+}
+.ph-3{
+    width: 80%;
+    height: 197px;
+    background: white;
+    display: none;
+}
+.ph-4{
+    text-align: center;
+    width: 25%;
+    height: 55px;
+    margin-left: 75%;
+    margin-top: -100px;
+    display: none;
+}
+.ph-5{
+    display: none;
+    width: 100%;
+    height: 20px;
+    background: rgb(245,245,245);
+}
+
+
+
+
+
+
+
+/*热门路线部分*/
+#J1{
+    width: 80%;
+    height: 135px;
+}
+#J1 p:nth-child(1){
+    font-size: 35px;
+    margin-left: 42%;
+    margin-top: 1.5%;
+}
+#J1 p:nth-child(2){
+    font-size: 15px;
+    margin-left: 43%;
+    margin-top: 0%;
+}
+.C1{
+    width: 80%;
+    height: 1020px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.C1-1{
+    width: 47%;
+    height: 490px;
+    background: black;
+    position: relative;
+}
+.C1-1 img{
+    width: 100%;
+    height: 387px;
+    position: absolute;
+    top: 0px;
+}
+.C1-1 p:nth-child(1){
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 410px;
+    left: 40px;
+}
+.C1-1 p:nth-child(2){
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 40px;
+}
+.C1-1 span{
+    font-size: 24px;
+}
+.C1-2 span{
+    font-size: 24px;
+}
+.C1-2{
+    background: black;
+    margin-left: 0px;
+    width: 47%;
+    height: 527px;
+    margin-top: 4px;
+    position: relative;
+}
+.C1-2 img{
+    width: 100%;
+    height: 438px;
+    position: absolute;
+    top: 0px;
+}
+.C1-2 p:nth-child(1){
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 455px;
+    left: 40px;
+}
+.C1-2 p:nth-child(2){
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    top: 485px;
+    left: 40px;
+}
+.C1-3{
+    float: right;
+    margin-right: 0px;
+    margin-top: -1021px;
+    background: white;
+    width: 52.6%;
+    height: 292px;
+    position: relative;
+}
+.C1-3  img{
+    width: 100%;
+    height: 292px;
+}
+.C1-4 img{
+    width: 100%;
+    height: 355px;
+}
+.C1-5 img{
+    width: 100%;
+    height: 365px;
+}
+.C1-4{
+    float: right;
+    margin-right: 0px;
+    margin-top: -725px;
+    background: white;
+    width: 52.6%;
+    height: 355px;
+    position: relative;
+}
+.C1-5{
+    float: right;
+    margin-right: 0px;
+    margin-top: -365px;
+    background: white;
+    width: 52.6%;
+    height: 365px;
+    position: relative;
+}
+.C3-div{
+    width: 100%;
+    height: 88px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+}
+.C3-div p:nth-child(1){
+    padding-top: 14px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+.C3-div p:nth-child(2){
+    padding-top: -2px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+.C3-div span{
+    font-size:24px;
+}
+.C4-div{
+    width: 100%;
+    height: 92px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+}
+.C4-div p:nth-child(1){
+    padding-top: 14px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+.C4-div p:nth-child(2){
+    padding-top: -2px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+.C5-div{
+    width: 100%;
+    height: 92px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0px;
+}
+
+.C5-div p:nth-child(1){
+    padding-top: 14px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+.C5-div p:nth-child(2){
+    padding-top: -2px;
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+
+
+.rph-1{
+    width: 100%;
+    height: 1068px;
+    display: none;
+}
+.rph-2{
+    width: 88%;
+    height: 1068px;
+    background: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    display: none;
+}
+.rph-3{
+    background: red;
+    width: 1%;
+    height: 35px;
+    position: absolute;
+    left: 0px;
+    top: 48px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*签证推荐*/
+#D{
+    width: 80%;
+    height: 215px;
+}
+#D p:nth-child(1){
+    color: black;
+    padding-left: 40%;
+    padding-top: 35px;
+    font-size: 30px;
+}
+#D p:nth-child(2){
+    color: black;
+    padding-left: 40%;
+    padding-top: 0px;
+    font-size: 15px;
+}
+#D p:nth-child(3){
+    color: black;
+    padding-left: 30%;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
+.C2{
+    width: 80%;
+    height: 555px;
+    background: black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.C2 span{
+    font-size: 25px;
+}
+.C2-1{
+    position: relative;
+    width: 30%;
+    background: red;
+    height: 555px;
+}
+.C2-1 img{
+    width: 100%;
+    height: 555px;
+}
+.C2-1-1{
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+}
+.C2-1-1 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+.C2-2{
+    width: 34.5%;
+    height: 276px;
+    background: white;
+    margin-left: 30.5%;
+    margin-top: -555px;
+    position: relative;
+}
+.C2-2-1{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.C2-2-1 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.C2-2 img{
+    width: 100%;
+    height: 276px;
+}
+.C2-3{
+    width: 34.5%;
+    height: 275px;
+    background: white;
+    margin-left: 30.5%;
+    margin-top: 4px;
+    position: relative;
+}
+.C2-3 img{
+    width: 100%;
+    height: 276px;
+}
+.C2-3-1{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.C2-3-1 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.C2-5 img{
+    width: 100%;
+    height: 276px;
+}
+.C2-4{
+    width: 34.5%;
+    height: 276px;
+    background: white;
+    margin-left: 65.5%;
+    margin-top: -555px;
+    position: relative;
+}
+.C2-4 img{
+    width: 100%;
+    height: 276px;
+}
+.C2-4-1{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.C2-4-1 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.C2-5{
+    width: 34.5%;
+    height: 275px;
+    background: white;
+    margin-left: 65.5%;
+    margin-top: 4px;
+    position: relative;
+}
+.C2-5-1{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.C2-5-1 p{
+    color: white;
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+.M{
+    width: 80%;
+    height: 215px;
+}
+.M-1{
+    width: 15%;
+    height: 52px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.M-1 p{
+    color: black;
+    padding-top: 5%;
+    font-size: 20px;
+}
+.M-2{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 347px;
+}
+.M-2 img{
+    width: 100%;
+    height: 347px;
+}
+
+.qz-1{
+    height: 670px;
+    width: 100%;
+    display: none;
+}
+.qz-2{
+    width: 88%;
+    height: 670px;
+    position: relative;
+    display: block;
+}
+
+
+
+/*使命与愿景*/
+#Q-1{
+    background: url("img/back.png");
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 590px;
+}
+.Q-2{
+    width: 80%;
+    height: 590px;
+}
+.Pp1{
+    color: black;
+    padding-left: 40%;
+    padding-top: 8%;
+    font-size: 35px;
+}
+.Pp2{
+    color: black;
+    padding-left: 36%;
+    padding-top: 0%;
+    font-size: 20px;
+}
+.Q-3{
+    width: 40%;
+    height: 352px;
+    background: black;
+    margin-left: 0px;
+    margin-top: 63px;
+}
+.Q-3 img{
+    width: 100%;
+    height: 352px;
+}
+.Q-4{
+    float: right;
+    margin-top: -352px;
+    width: 60%;
+    height: 352px;
+    background: rgba(2, 17, 128, 0.507);
+    margin-right: 0px;
+}
+.Pp3{
+    color: white;
+    padding-left: 36%;
+    padding-top: 10%;
+    font-size: 30px;
+}
+.Pp4{
+    color: white;
+    padding-left: 15%;
+    padding-top: 3%;
+    font-size: 17px;
+}
+.Pp5{
+    color: white;
+    padding-left: 15%;
+    font-size: 17px;
+}
+.Q-5{
+    width: 80%;
+    height: 460px;
+    margin-top: 5px;
+}
+.Q-5 img{
+    width: 100%;
+    height: 460px;
+}
+.Q-6{
+    width: 78.3%;
+    height: 450px;
+    background: rgb(28, 80, 128);
+    padding-left: -15px;
+    padding-right: -15px;
+    position: relative;
+}
+.Block{
+    height: 30px;
+}
+.Q-6 img:nth-child(1){
+    position: absolute;
+    left: 16%;
+    top:12%;
+}
+.Q-6 img:nth-child(2){
+    position: absolute;
+    left: 44%;
+    top:12%;
+}
+.Q-6 img:nth-child(3){
+    position: absolute;
+    left: 70%;
+    top:12%;
+}
+.P-p1{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 290px;
+    left: 12%;
+}
+.P-p2{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 320px;
+    left: 14%;
+}
+.P-p3{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 290px;
+    left: 48%;
+}
+.P-p4{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 320px;
+    left: 43%;
+}
+.P-p5{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 290px;
+    left: 72%;
+}
+.P-p6{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 320px;
+    left: 68%;
+}
+
+
+.WC-1{
+    width: 100%;
+    height: 1829px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底栏*/
+.BOM-1{
+    background: black;
+    width: 100%;
+    height: 304px;
+    display: none;
+}
+.bottomer{
+    position: relative;
+    height: 530px;
+    background: black;
+}
+.bottomer-1{
+    width: 80%;
+    height: 530px;
+    position: relative;
+}
+.bottomer-1 p:nth-child(1){
+    position: absolute;
+    left: 3%;
+    top: 50px;
+    font-size:20px;
+    color: white;
+}
+.bottomer-1 p:nth-child(2){
+    position: absolute;
+    left: 3%;
+    top: 150px;
+    font-size:20px;
+    color: white;
+}
+.bottomer-1 p:nth-child(3){
+    position: absolute;
+    left: 3%;
+    top: 225px;
+    font-size:20px;
+    color: white;
+}
+.bottomer-1 p:nth-child(4){
+    position: absolute;
+    left: 3%;
+    top: 273px;
+    font-size:20px;
+    color: white;
+}
+.bottomer-1 p:nth-child(5){
+    position: absolute;
+    left: 15%;
+    top: 103px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(6){
+    position: absolute;
+    left: 25%;
+    top: 103px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(7){
+    position: absolute;
+    left: 36%;
+    top: 103px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(8){
+    position: absolute;
+    left: 44%;
+    top: 103px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(9){
+    position: absolute;
+    left: 13%;
+    top: 151px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(10){
+    position: absolute;
+    left: 13%;
+    top: 184px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(11){
+    position: absolute;
+    left: 13%;
+    top: 227px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(12){
+    position: absolute;
+    left: 13%;
+    top: 275px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(13){
+    position: absolute;
+    left: 13%;
+    top: 305px;
+    font-size:15px;
+    color: white;
+    font-weight: lighter;
+}
+.bottomer-1 p:nth-child(14){
+    position: absolute;
+    left: 26%;
+    top: 435px;
+    font-size:20px;
+    color: white;
+}
+.Bbom{
+    position: absolute;
+    top: 36px;
+    left: 12%;
+    width: 35%;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 400px;
+    border-top: 2px solid gray;
+}
+
+
+
+
+
+
+
+
+/*设值媒体查询*/
+/*手机端*/
+@media only screen and (max-width: 768px) { 
+    body{
+        background: white;
+    }
+    .toppest{
+        display: none;
+    }
+    .nav-1{
+        background:white;
+    }
+    .nav>li{
+        background: white;
+        width: 100%;
+    }
+    .navbar-nav{
+        height: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .extraa{
+        height: 45px;
+        width: 25%;
+        background: orangered;
+        margin-left: 68%;
+        margin-top: -80px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .extraa p{
+        font-size: 25px;
+        color: white;
+        padding-top: 6px;
+    }
+
+
+    /*轮播图区域*/
+    .C{
+        height: 366px;
+    }
+    .S-1{
+        position: absolute;
+        top:90%;
+        left: 10%;
+        width: 80%;
+        height: 15%;
+        background: white;
+        box-shadow: 0 0 15px black;
+        border-radius: 5px;
+        float: left;
+    }
+    .S-1 button{
+        border: none;
+    }
+    .S-2{
+        float: left;
+        background: rgb(211, 211, 216);
+        width: 30%;
+        height: 100%;
+        border-radius:5px 0px 0px 5px;
+    }
+    .S-2 img{
+        position: absolute;
+        left: 5%;
+        top: 23%;
+    }
+    .S-2 p{
+        position: absolute;
+        left: 13%;
+        top: 28%;
+        font-size: 16px;
+    }
+    .S-3{
+        float: left;
+        width: 45%;
+        height: 100%;
+        background: black;
+    }
+    .S-4 img{
+        position: absolute;
+        top:20%;
+        left: 85%;
+    }
+
+    /*机场接送*/
+    .ph-1{
+        display: block;
+    }
+    .block{
+        display: none;
+    }
+    .block-1{
+        display: none;
+    }
+    .ph-2{
+        display: block;
+    }
+    .ph-2 img{
+        margin-left: 0%;
+        margin-top: -60px;
+    }
+    .ph-3{
+        display: block;
+    }
+    .ph-3 p:nth-child(1){
+        font-size: 25px;
+        color: rgb(28, 80, 128);
+        padding-left: 25%;
+        padding-top: 40px;
+    }
+    .ph-3 p:nth-child(2){
+        font-size: 15px;
+        color: rgb(102, 102, 102);
+        padding-left: 25%;
+        padding-top: 10px;
+    }
+    .ph-3 p:nth-child(3){
+        font-size: 15px;
+        color: rgb(102, 102, 102);
+        padding-left: 25%;
+        padding-top: 0px;
+    }
+    .ph-4{
+        display: block;
+        position: relative;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    .ph-4 p{
+        position: absolute;
+        top: -30px;
+        left: -15px;
+        color:rgb(102, 102, 102);
+    }
+    .ph-5{
+        display: block;
+    }
+
+
+    /*热门线路*/
+    .rph-1{
+        display: block;
+    }
+    .rph-2{
+        display: block;
+    }
+    .rph-3{
+        display: block;
+    }
+    .rph-3-p1{
+        position: absolute;
+        left: 15px;
+        top: 49px;
+        font-size:20px;
+        color: black;
+        font-weight: bold;
+    }
+    .rph-4{
+        position: absolute;
+        top: 99px;
+        width: 100%;
+        background: rgb(232,232,232);
+        height: 2px;
+    }
+    .rph-5{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 120px;
+    }
+    .rph-5 img{
+        width: 100%;
+        height: 400px;
+    }
+    .rph-6{
+        width: 100%;
+        height: 116px;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 285px;
+    }
+    .rph-6-p1{
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top:20px;
+        left: 15px; 
+    }
+    .rph-6-p2{
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top:60px;
+        left: 15px; 
+    }
+    .rph-6-p3{
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top:45px;
+        left: 70%; 
+    }
+    .rph-7{
+        width: 100%;
+        position: absolute;
+        height: 400px;
+        top: 545px;
+        background: red;
+    }
+    .rph-7 img{
+        width: 100%;
+        height: 400px;
+    }
+    .rph-8{
+        width: 100%;
+        height: 116px;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 285px;
+    }
+    .rph-9{
+        position: absolute;
+        top: 980px;
+        left: 30%;
+        width: 226px;
+        height: 55px;
+        border:1px solid rgb(102,102,102);;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .rph-9 p{
+        font-size: 30px;
+        color: rgb(102,102,102);
+        padding-top: 7px;
+    }
+    #J1{
+        display: none;
+    }
+    .C1{
+        display: none;
+    }
+
+
+
+    /*签证推荐*/
+    #D{
+        display: none;
+    }
+    .C2{
+        display: none;
+    }
+    .M{
+        display: none;
+    }
+    .M-2{
+        display: none;
+    }
+    .qz-1{
+        display: block;
+    }
+    .qz-2{
+        display: block;
+    }
+    .qz-3{
+        height: 2px;
+        width: 100%;
+        background: rgb(232, 232, 232);
+        position: absolute;
+        top: 99px;
+        left: 0px;
+    }
+    .qz-4{
+        position: absolute;
+        left: 0px;
+        top: 118px;
+        width: 47%;
+        height: 408px;
+    }
+    .qz-4 img{
+        width: 100%;
+        height: 408px;
+    }
+    .qz-5{
+        width: 100%;
+        height: 56px;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 352px;
+        left: 0px;
+    }
+    .qz-5 p{
+        font-size: 27px;
+        color: white;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+    .qz-6{
+        position: absolute;
+        left: 48%;
+        top: 118px;
+        width: 52%;
+        height: 196px;
+    }
+    .qz-6 img{
+        width: 100%;
+        height: 196px;
+    }
+    .qz-7{
+        width: 100%;
+        height: 56px;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 142px;
+        left: 0px;
+    }
+    .qz-7 p{
+        font-size: 27px;
+        color: white;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+    .qz-8{
+        position: absolute;
+        left: 48%;
+        top: 329px;
+        width: 52%;
+        height: 196px;
+    }
+    .qz-8 img{
+        width: 100%;
+        height: 196px;
+    }
+    .qz-9{
+        width: 100%;
+        height: 56px;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 141px;
+        left: 0px;
+    }
+    .qz-9 p{
+        font-size: 27px;
+        color: white;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+    }
+    .qz-10{
+        position: absolute;
+        top: 563px;
+        left: 30%;
+        width: 226px;
+        height: 55px;
+        border:1px solid rgb(102,102,102);;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .qz-10 p{
+        font-size: 30px;
+        color: rgb(102,102,102);
+        padding-top: 7px;
+    }
+
+
+    /*使命与愿景*/
+    #Q-1{
+        display: none;
+    }
+    .Q5{
+        display: none;
+    }
+    .block{
+        display: none;
+    }
+    .Q6{
+        display: none;
+    }
+    .WC-1{
+        display: block;
+    }
+    .WC-2{
+        width: 88%;
+        height: 98px;
+        position: relative;
+        background: white;
+    }
+    .rph-3-p2{
+        position: absolute;
+        left: 15px;
+        top: 49px;
+        font-size:30px;
+        color: black;
+    }
+    .WC-3{
+        width: 100%;
+        height: 450px;
+        background: url("img/back.png");
+        position: relative;
+    }
+    .WC-4{
+        width: 88%;
+        height: 329px;
+        top: 50px;
+        background: black;
+        margin-top: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .WC-4 img{
+        width: 100%;
+        height: 329px;
+        left: 0px;
+    }
+    .rphh-4{
+        position: absolute;
+        top: 97px;
+        width: 100%;
+        background: rgb(232,232,232);
+        height: 2px;
+        left: 0px;
+    }
+    .WC-5{
+        width: 88%;
+        height: 1280px;
+        background: white;
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .WC-5 p:nth-child(1){
+        position: absolute;
+        top: 1px;
+        left: 36%;
+        font-size: 30px;
+        color: black;
+    }
+    .WC-5 p:nth-child(2){
+        position: absolute;
+        top: 62px;
+        left: 2%;
+        font-size: 21px;
+        color: black;
+    }
+    .WC-5 p:nth-child(3){
+        position: absolute;
+        top: 95px;
+        left: 2%;
+        font-size: 21px;
+        color: black;
+    }
+    .WC-5 p:nth-child(4){
+        position: absolute;
+        top: 127px;
+        left: 2%;
+        font-size: 21px;
+        color: black;
+    }
+    .WC-5 p:nth-child(5){
+        position: absolute;
+        top: 160px;
+        left: 2%;
+        font-size: 21px;
+        color: black;
+    }
+    .WC-5 p:nth-child(6){
+        position: absolute;
+        top: 630px;
+        left: 36%;
+        font-size: 30px;
+        color: black;
+    }
+    .WC-5 p:nth-child(7){
+        position: absolute;
+        top: 720px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(8){
+        position: absolute;
+        top: 750px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(9){
+        position: absolute;
+        top: 780px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(10){
+        position: absolute;
+        top: 900px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(11){
+        position: absolute;
+        top: 935px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(12){
+        position: absolute;
+        top: 1100px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-5 p:nth-child(13){
+        position: absolute;
+        top: 1135px;
+        left: 36%;
+        font-size: 22px;
+        color: black;
+    }
+    .WC-6{
+        width: 100%;
+        height: 328px;
+        margin-top: 237px;
+    }
+    .WC-6 img{
+        width: 100%;
+        height: 328px;
+    }
+    .IM1{
+        position: absolute;
+        left: 13%;
+        top: 730px;
+    }
+    .IM2{
+        position: absolute;
+        left: 13%;
+        top: 910px;
+    }
+    .IM3{
+        position: absolute;
+        left: 13%;
+        top: 1110px;
+    }
+    .DV1{
+        width: 100%;
+        height: 2px;
+        background: rgb(232,232,232);
+        position: absolute;
+        top: 850px;
+    }
+    .DV2{
+        width: 100%;
+        height: 2px;
+        background: rgb(232,232,232);
+        position: absolute;
+        top: 1040px;
+    }
+    .DV3{
+        width: 100%;
+        height: 2px;
+        background: rgb(232,232,232);
+        position: absolute;
+        top: 1220px;
+    }
+    #Q1{
+        display: none;
+    }
+    .Q-5{
+        display: none;
+    }
+    .Block{
+        display: none;
+    }
+    .Q-6{
+        display: none;
+    }
+
+
+
+
+    /*底栏*/
+    .bottomer{
+        display: none;
+    }
+    .BOM-1{
+        display: block;
+    }
+    .BOM-2{
+        width: 88%;
+        height: 304px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+    }
+    .BOM-2 p:nth-child(1){
+        position: absolute;
+        font-size: 22px;
+        top: 100px;
+        left: 21%;
+        font-weight: bold;
+        color: white;
+    }
+    .BOM-2 p:nth-child(2){
+        position: absolute;
+        font-size: 22px;
+        top: 140px;
+        left: 15%;
+        font-weight: bold;
+        color: white;
+    }
+    .BOM-2 p:nth-child(3){
+        position: absolute;
+        font-size: 22px;
+        top: 180px;
+        left: 27%;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+
+
+
+/*PC端*/
+@media only screen and (min-width:768px) {
+    .toppest{
+        display: block;
+    }
+
+    
+}
