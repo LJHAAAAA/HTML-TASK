@@ -395,11 +395,17 @@
             temp=0;
         }
     }
-    console.log(document.body.scrollWidth);
-    if(document.body.scrollWidth<=750){
-        li2.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#J2";
-        li3.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#D1";
-        li4.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#Q-2";
-    }
+    window.onresize=function(){
+        if(document.body.scrollWidth<=750){
+            li2.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#J2";
+            li3.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#D1";
+            li4.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#Q-2";
+        }
+        else{
+            li2.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#J1";
+            li3.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.html#D";
+            li4.children[0].href="https://ljhaaaaa.github.io/HTML-TASK/FinalWork/travel.htmlQ-1";
+        }
+    };
 </script>
 </html>
